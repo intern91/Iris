@@ -1,4 +1,4 @@
-local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/refs/heads/main/Types.lua"))()
+local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/main/Types.lua"))()
 
 return function(Iris: Types.Iris)
     local showMainWindow = Iris.State(true)

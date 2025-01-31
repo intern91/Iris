@@ -1,4 +1,4 @@
-local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/peke7374/Iris/main/Types.lua"))()
+local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/refs/heads/main/Types.lua"))()
 
 return function(Iris: Types.Iris)
     local showMainWindow = Iris.State(true)
@@ -8,7 +8,6 @@ return function(Iris: Types.Iris)
     local showWindowlessDemo = Iris.State(false)
     local showMainMenuBarWindow = Iris.State(false)
 
-    -- stylua: ignore start
     local function helpMarker(helpText)
         Iris.PushConfig({ TextColor = Iris._config.TextDisabledColor })
         local text = Iris.Text({ "(?)" })
@@ -21,7 +20,6 @@ return function(Iris: Types.Iris)
         Iris.PopConfig()
     end
 
-    -- shows each widgets functionality
     local widgetDemos = {
         Basic = function()
             Iris.Tree({ "Basic" })

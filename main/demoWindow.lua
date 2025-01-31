@@ -977,7 +977,7 @@ return function(Iris: Types.Iris)
         end
 
         local window: Types.Widget = Iris.Window({
-            "Iris Demo Window",
+            "priv9.net | demp",
             [Iris.Args.Window.NoTitleBar] = NoTitleBar.value,
             [Iris.Args.Window.NoBackground] = NoBackground.value,
             [Iris.Args.Window.NoCollapse] = NoCollapse.value,
@@ -991,7 +991,7 @@ return function(Iris: Types.Iris)
 
         mainMenuBar()
 
-        Iris.Text({ "Iris says hello. (" .. Iris.Internal._version .. ")" })
+        Iris.Text({ "priv9. (" .. Iris.Internal._version .. ")" })
 
         Iris.CollapsingHeader({ "Window Options" })
         Iris.Table({ 3, false, false, false })

@@ -1,8 +1,8 @@
-local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/pupsore/Iris/refs/heads/main/main/Types.lua"))()
+local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/main/Types.lua"))()
 
 local Iris = {} :: Types.Iris
 
-local InternalLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/pupsore/Iris/refs/heads/main/main/Internal.lua"))()
+local InternalLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/main/Internal.lua"))()
 local Internal: Types.Internal = InternalLoad(Iris)
 
 Iris.Disabled = false
@@ -144,7 +144,7 @@ function Iris.PopConfig()
     Internal._config = getmetatable(Internal._config :: any).__index
 end
 
-Iris.TemplateConfig = loadstring(game:HttpGet("https://raw.githubusercontent.com/peke7374/Iris/main/config.lua"))()
+Iris.TemplateConfig = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/main/config.lua"))()
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.colorDark) -- use colorDark and sizeDefault themes by default
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.sizeDefault)
 Iris.UpdateGlobalConfig(Iris.TemplateConfig.utilityDefault)
@@ -215,11 +215,11 @@ function Iris.ComputedState(firstState: Types.State, onChangeCallback: (firstSta
     end
 end
 
-local DemoLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/pupsore/Iris/refs/heads/main/main/demoWindow.lua"))()
+local DemoLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/main/demoWindow.lua"))()
 Iris.ShowDemoWindow = DemoLoad(Iris)
 
-local ApiLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/peke7374/Iris/main/API.lua"))()
-local WidgetLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/peke7374/Iris/main/widgets.lua"))()
+local ApiLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/main/API.lua"))()
+local WidgetLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/intern91/Iris/main/widgets.lua"))()
 WidgetLoad(Internal)
 ApiLoad(Iris)
 

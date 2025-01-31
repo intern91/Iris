@@ -215,7 +215,7 @@ function Iris.ComputedState(firstState: Types.State, onChangeCallback: (firstSta
     end
 end
 
-local DemoLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/peke7374/Iris/main/demoWindow.lua"))()
+local DemoLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/pupsore/Iris/refs/heads/main/main/demoWindow.lua"))()
 Iris.ShowDemoWindow = DemoLoad(Iris)
 
 local ApiLoad = loadstring(game:HttpGet("https://raw.githubusercontent.com/peke7374/Iris/main/API.lua"))()
@@ -224,3 +224,4 @@ WidgetLoad(Internal)
 ApiLoad(Iris)
 
 return Iris
+demoWindow
